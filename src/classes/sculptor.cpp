@@ -108,11 +108,21 @@ void Sculptor::cutVoxel(int x, int y, int z)
 void Sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1)
 {
   std::cout << "Calling putBox()" << std::endl;
-  for (int i = x0; i <= x1; i++)
+
+  int _x0 = std::min(x0, x1);
+  int _x1 = std::max(x0, x1);
+
+  int _y0 = std::min(y0, y1);
+  int _y1 = std::max(y0, y1);
+
+  int _z0 = std::min(z0, z1);
+  int _z1 = std::max(z0, z1);
+
+  for (int i = _x0; i <= _x1; i++)
   {
-    for (int j = y0; j <= y1; j++)
+    for (int j = _y0; j <= _y1; j++)
     {
-      for (int k = z0; k <= z1; k++)
+      for (int k = _z0; k <= _z1; k++)
       {
         Voxel &voxel = v[i][j][k];
         voxel.r = r;
@@ -130,11 +140,21 @@ void Sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1)
 void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1)
 {
   std::cout << "Calling cutBox()" << std::endl;
-  for (int i = x0; i <= x1; i++)
+
+  int _x0 = std::min(x0, x1);
+  int _x1 = std::max(x0, x1);
+
+  int _y0 = std::min(y0, y1);
+  int _y1 = std::max(y0, y1);
+
+  int _z0 = std::min(z0, z1);
+  int _z1 = std::max(z0, z1);
+
+  for (int i = _x0; i <= _x1; i++)
   {
-    for (int j = y0; j <= y1; j++)
+    for (int j = _y0; j <= _y1; j++)
     {
-      for (int k = z0; k <= z1; k++)
+      for (int k = _z0; k <= _z1; k++)
       {
         Voxel &voxel = v[i][j][k];
 
@@ -288,33 +308,34 @@ void Sculptor::writeOFF(const char *filename)
     {
       for (int z = 0; z < nz; z++)
       {
-        if (v[x][y][z].show)
+        Voxel &voxel = v[x][y][z];
+        if (voxel.show)
         {
           // Adiciona os 8 vértices do voxel
           vertices.push_back(std::to_string(x) + " " + std::to_string(y) + " " + std::to_string(z) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
           vertices.push_back(std::to_string(x + 1) + " " + std::to_string(y) + " " + std::to_string(z) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
           vertices.push_back(std::to_string(x + 1) + " " + std::to_string(y + 1) + " " + std::to_string(z) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
           vertices.push_back(std::to_string(x) + " " + std::to_string(y + 1) + " " + std::to_string(z) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
           vertices.push_back(std::to_string(x) + " " + std::to_string(y) + " " + std::to_string(z + 1) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
           vertices.push_back(std::to_string(x + 1) + " " + std::to_string(y) + " " + std::to_string(z + 1) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
           vertices.push_back(std::to_string(x + 1) + " " + std::to_string(y + 1) + " " + std::to_string(z + 1) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
           vertices.push_back(std::to_string(x) + " " + std::to_string(y + 1) + " " + std::to_string(z + 1) + " " +
-                             std::to_string(v[x][y][z].r) + " " + std::to_string(v[x][y][z].g) + " " +
-                             std::to_string(v[x][y][z].b) + " " + std::to_string(v[x][y][z].a));
+                             std::to_string(voxel.r) + " " + std::to_string(voxel.g) + " " +
+                             std::to_string(voxel.b) + " " + std::to_string(voxel.a));
 
           // Adiciona as 6 faces do voxel
           faces.push_back("4 " + std::to_string(vertexIndex) + " " + std::to_string(vertexIndex + 1) + " " +
