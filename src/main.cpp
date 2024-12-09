@@ -36,6 +36,13 @@ int main()
   int newZcenter = nz / 2 + 5;           // Cúpula no topo
   sculptor.setColor(1.0, 1.0, 1.0, 1.0); // Branco
   sculptor.putEllipsoid(xcenter, ycenter, newZcenter - 20, 45, 45, 15);
+  sculptor.cutVoxel(60, 60, zcenter - 15);
+  sculptor.cutVoxel(60, 60, zcenter + 15);
+  sculptor.setColor(0.5, 0.5, 0.5, 1.0);
+
+  // Porta Superior da nave
+  sculptor.putSphere(60, 60, zcenter + 15, 13);
+  sculptor.cutBox(60 - 16, 60 + 16, 60 - 16, 60 + 16, 30, nz - 1);
 
   // Parte 5: Janelas arredondadas (verdes)
   // sculptor.setColor(0.0, 0.8, 0.5, 1.0);                                   // Verde
