@@ -28,12 +28,7 @@ int main()
     sculptor.putEllipsoid(x, y, zcenter, 4, 4, 5);
   }
 
-  // Parte 3: Painéis laterais (vermelhos)
-  sculptor.setColor(0.8, 0.0, 0.0, 1.0);
-  sculptor.putBox(xcenter - 25, xcenter - 20, ycenter - 5, ycenter + 5, zcenter - 3, zcenter + 3); // Esquerdo
-  sculptor.putBox(xcenter + 20, xcenter + 25, ycenter - 5, ycenter + 5, zcenter - 3, zcenter + 3); // Direito
-
-  // Parte 4: Cúpula superior (elipsoide branco)
+  // Parte 3: Cúpula superior (elipsoide branco)
   sculptor.setColor(1.0, 1.0, 1.0, 1.0);
   sculptor.putEllipsoid(xcenter, ycenter, newZcenter - 20, 45, 45, 15);
 
@@ -44,7 +39,7 @@ int main()
   sculptor.putSphere(60, 60, zcenter + 15, 13);
   sculptor.cutBox(60 - 16, 60 + 16, 60 - 16, 60 + 16, 30, nz - 1);
 
-  // Parte 5: Detalhes verdes
+  // Parte 4: Detalhes verdes
   sculptor.setColor(0.0, 0.8, 0.5, 1.0);
   for (int i = 15; i < 360; i += 30)
   {
@@ -54,7 +49,7 @@ int main()
     sculptor.putVoxel(x, y, zcenter);
   }
 
-  // Parte 6: Suportes (pés da nave)
+  // Parte 5: Suportes (pés da nave)
   sculptor.setColor(1.0, 1.0, 1.0, 1.0);
   for (int i = 30; i < 360; i += 60)
   {
@@ -70,14 +65,15 @@ int main()
   sculptor.setColor(0.0, 0.0, 0.0, 1.0);
   sculptor.putEllipsoid(xcenter, ycenter, zcenter, 50, 50, 10);
 
-  // Parte 7: Detalhes roxos no topo
+  // Parte 6: Detalhes roxos no topo
   sculptor.setColor(0.5, 0.0, 0.5, 1.0);
   sculptor.putSphere(xcenter, ycenter + 32, newZcenter - 15, 8);
 
   // Exporta para arquivo .OFF
-  sculptor.writeOFF("frieza_ship_detailed.off");
+  const char* filename = "frieza_spaceship.off";
+  sculptor.writeOFF(filename);
 
-  std::cout << "Figura detalhada da nave do Freeza criada e exportada para frieza_ship_detailed.off\n";
+  std::cout << "Figura detalhada da nave do Freeza criada e exportada para " << filename << std::endl;
 
   return 0;
 }

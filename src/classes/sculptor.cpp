@@ -6,7 +6,6 @@
 #include <vector>
 #include <string>
 
-// Constructor
 Sculptor::Sculptor(int _nx, int _ny, int _nz)
 {
   std::cout << "Calling Sculptor()" << std::endl;
@@ -46,7 +45,6 @@ Sculptor::Sculptor(int _nx, int _ny, int _nz)
   std::cout << "Finished calling Sculptor()" << std::endl;
 }
 
-// Destructor
 Sculptor::~Sculptor()
 {
   std::cout << "Calling ~Sculptor()" << std::endl;
@@ -64,7 +62,6 @@ Sculptor::~Sculptor()
   std::cout << "Finished calling ~Sculptor()" << std::endl;
 }
 
-// Set Color
 void Sculptor::setColor(float r, float g, float b, float a)
 {
   std::cout << "Calling setColor()" << std::endl;
@@ -77,7 +74,6 @@ void Sculptor::setColor(float r, float g, float b, float a)
   std::cout << "Finished calling setColor()" << std::endl;
 }
 
-// Put Voxel
 void Sculptor::putVoxel(int x, int y, int z)
 {
   std::cout << "Calling putVoxel()" << std::endl;
@@ -93,7 +89,6 @@ void Sculptor::putVoxel(int x, int y, int z)
   std::cout << "Finished calling putVoxel()" << std::endl;
 }
 
-// Cut Voxel
 void Sculptor::cutVoxel(int x, int y, int z)
 {
   std::cout << "Calling cutVoxel()" << std::endl;
@@ -104,7 +99,6 @@ void Sculptor::cutVoxel(int x, int y, int z)
   std::cout << "Finished calling cutVoxel()" << std::endl;
 }
 
-// Put Box
 void Sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1)
 {
   std::cout << "Calling putBox()" << std::endl;
@@ -136,7 +130,6 @@ void Sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1)
   std::cout << "Finished calling putBox()" << std::endl;
 }
 
-// Cut Box
 void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1)
 {
   std::cout << "Calling cutBox()" << std::endl;
@@ -165,7 +158,6 @@ void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1)
   std::cout << "Finished calling cutBox()" << std::endl;
 }
 
-// Put Sphere
 void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius)
 {
   std::cout << "Calling putSphere()" << std::endl;
@@ -195,7 +187,6 @@ void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius)
   std::cout << "Finished calling putSphere()" << std::endl;
 }
 
-// Cut Sphere
 void Sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius)
 {
   std::cout << "Calling cutSphere()" << std::endl;
@@ -221,7 +212,6 @@ void Sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius)
   std::cout << "Finished calling putSphere()" << std::endl;
 }
 
-// Put Ellipsoid
 void Sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
 {
   std::cout << "Calling putEllipsoid()" << std::endl;
@@ -255,7 +245,6 @@ void Sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int r
   std::cout << "Finished calling putEllipsoid()" << std::endl;
 }
 
-// Cut Ellipsoid
 void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
 {
   std::cout << "Calling cutEllipsoid()" << std::endl;
@@ -285,7 +274,6 @@ void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int r
   std::cout << "Finished calling cutEllipsoid()" << std::endl;
 }
 
-// Write OFF File
 void Sculptor::writeOFF(const char *filename)
 {
   std::ofstream file(filename);
@@ -358,7 +346,7 @@ void Sculptor::writeOFF(const char *filename)
     }
   }
 
-  // Altere para "COFF" para suportar cores no MeshLab
+  // Alterando para "COFF" para suportar cores no MeshLab
   file << "COFF\n";
   file << vertices.size() << " " << faces.size() << " 0\n";
 
@@ -375,5 +363,5 @@ void Sculptor::writeOFF(const char *filename)
   }
 
   file.close();
-  std::cout << "Arquivo " << filename << " gerado com sucesso com cores (COFF)!\n";
+  std::cout << "Arquivo " << filename << " gerado com sucesso!\n";
 }
