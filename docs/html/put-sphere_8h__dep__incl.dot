@@ -1,0 +1,15 @@
+digraph "src/headers/put-sphere.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/headers/put-sphere.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Declaração da classe PutSphere."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="src/classes/put-sphere.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-sphere_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/headers/figura\l-reader.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figura-reader_8h.html",tooltip="Declaração da classe FiguraReader para leitura de figuras geométricas de um arquivo."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/classes/figura\l-reader.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figura-reader_8cpp.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip=" "];
+}

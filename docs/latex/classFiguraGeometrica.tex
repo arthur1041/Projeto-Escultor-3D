@@ -1,0 +1,81 @@
+\hypertarget{classFiguraGeometrica}{}\doxysection{Figura\+Geometrica Class Reference}
+\label{classFiguraGeometrica}\index{FiguraGeometrica@{FiguraGeometrica}}
+
+
+Classe abstrata para representar figuras geométricas.  
+
+
+
+
+{\ttfamily \#include $<$figura-\/geometrica.\+h$>$}
+
+
+
+Inheritance diagram for Figura\+Geometrica\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFiguraGeometrica_a5e3a33d5c4b65f6d5f37aba5ba8b140d}{Figura\+Geometrica}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFiguraGeometrica_a7614a615f3decda0ad065c127affaae6}{$\sim$\+Figura\+Geometrica}} ()=default
+\begin{DoxyCompactList}\small\item\em Destrutor virtual da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const =0
+\begin{DoxyCompactList}\small\item\em Método virtual puro para desenhar a figura em um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe abstrata para representar figuras geométricas. 
+
+A classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} define uma interface para figuras geométricas que podem ser desenhadas em um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. Classes derivadas devem implementar o método draw para especificar como a figura será desenhada. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFiguraGeometrica_a5e3a33d5c4b65f6d5f37aba5ba8b140d}\label{classFiguraGeometrica_a5e3a33d5c4b65f6d5f37aba5ba8b140d}} 
+\index{FiguraGeometrica@{FiguraGeometrica}!FiguraGeometrica@{FiguraGeometrica}}
+\index{FiguraGeometrica@{FiguraGeometrica}!FiguraGeometrica@{FiguraGeometrica}}
+\doxysubsubsection{\texorpdfstring{FiguraGeometrica()}{FiguraGeometrica()}}
+{\footnotesize\ttfamily Figura\+Geometrica\+::\+Figura\+Geometrica (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}}. 
+
+\mbox{\Hypertarget{classFiguraGeometrica_a7614a615f3decda0ad065c127affaae6}\label{classFiguraGeometrica_a7614a615f3decda0ad065c127affaae6}} 
+\index{FiguraGeometrica@{FiguraGeometrica}!````~FiguraGeometrica@{$\sim$FiguraGeometrica}}
+\index{````~FiguraGeometrica@{$\sim$FiguraGeometrica}!FiguraGeometrica@{FiguraGeometrica}}
+\doxysubsubsection{\texorpdfstring{$\sim$FiguraGeometrica()}{~FiguraGeometrica()}}
+{\footnotesize\ttfamily virtual Figura\+Geometrica\+::$\sim$\+Figura\+Geometrica (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destrutor virtual da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}}. 
+
+Garante que as classes derivadas terão seus destrutores chamados corretamente. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}\label{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}} 
+\index{FiguraGeometrica@{FiguraGeometrica}!draw@{draw}}
+\index{draw@{draw}!FiguraGeometrica@{FiguraGeometrica}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Figura\+Geometrica\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Método virtual puro para desenhar a figura em um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+Este método deve ser implementado pelas classes derivadas para definir como a figura geométrica será desenhada na matriz tridimensional do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a figura será desenhada. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPutVoxel_af41f32b745dfe93f4aa95e5256d304db}{Put\+Voxel}}, \mbox{\hyperlink{classPutSphere_a5cd609ff7b8fa175a81e53125b4801fe}{Put\+Sphere}}, \mbox{\hyperlink{classPutEllipsoid_a1de90fc007251c01c1e0342d8b07aea5}{Put\+Ellipsoid}}, \mbox{\hyperlink{classPutBox_af31bbc3174a045f0b990b06a0febe697}{Put\+Box}}, \mbox{\hyperlink{classCutVoxel_a03f27f215d6a5d3a5af58c8e71cdeb23}{Cut\+Voxel}}, \mbox{\hyperlink{classCutSphere_a165580eae0ffec22277618891f032152}{Cut\+Sphere}}, \mbox{\hyperlink{classCutEllipsoid_aa5ccec788a786615a120c0097cc07890}{Cut\+Ellipsoid}}, and \mbox{\hyperlink{classCutBox_a85237405205a95158959d7cc6f89c783}{Cut\+Box}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{figura-geometrica_8h}{figura-\/geometrica.\+h}}\end{DoxyCompactItemize}

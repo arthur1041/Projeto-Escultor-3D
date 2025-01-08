@@ -1,0 +1,53 @@
+digraph "src/headers/figura-geometrica.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/headers/figura\l-geometrica.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Declaração da classe abstrata FiguraGeometrica."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="src/headers/cut-box.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-box_8h.html",tooltip="Declaração da classe CutBox."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/classes/cut-box.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-box_8cpp.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/headers/figura\l-reader.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figura-reader_8h.html",tooltip="Declaração da classe FiguraReader para leitura de figuras geométricas de um arquivo."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/classes/figura\l-reader.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figura-reader_8cpp.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="src/headers/cut-ellipsoid.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-ellipsoid_8h.html",tooltip="Declaração da classe CutEllipsoid."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="src/classes/cut-ellipsoid.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-ellipsoid_8cpp.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="src/headers/cut-sphere.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-sphere_8h.html",tooltip="Declaração da classe CutSphere."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="src/classes/cut-sphere.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-sphere_8cpp.html",tooltip=" "];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="src/headers/cut-voxel.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-voxel_8h.html",tooltip="Declaração da classe CutVoxel."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="src/classes/cut-voxel.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-voxel_8cpp.html",tooltip=" "];
+  Node11 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="src/headers/put-box.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-box_8h.html",tooltip="Declaração da classe PutBox."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="src/classes/put-box.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-box_8cpp.html",tooltip=" "];
+  Node13 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="src/headers/put-ellipsoid.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-ellipsoid_8h.html",tooltip="Declaração da classe PutEllipsoid."];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="src/classes/put-ellipsoid.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-ellipsoid_8cpp.html",tooltip=" "];
+  Node15 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="src/headers/put-sphere.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-sphere_8h.html",tooltip="Declaração da classe PutSphere."];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="src/classes/put-sphere.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-sphere_8cpp.html",tooltip=" "];
+  Node17 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="src/headers/put-voxel.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-voxel_8h.html",tooltip="Declaração da classe PutVoxel."];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="src/classes/put-voxel.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-voxel_8cpp.html",tooltip=" "];
+  Node19 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,91 @@
+\hypertarget{classCutEllipsoid}{}\doxysection{Cut\+Ellipsoid Class Reference}
+\label{classCutEllipsoid}\index{CutEllipsoid@{CutEllipsoid}}
+
+
+Classe para remover um elipsoide de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$cut-\/ellipsoid.\+h$>$}
+
+
+
+Inheritance diagram for Cut\+Ellipsoid\+:
+% FIG 0
+
+
+Collaboration diagram for Cut\+Ellipsoid\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCutEllipsoid_a341bcf037ada67c4727857b467d7788b}{Cut\+Ellipsoid}} (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classCutEllipsoid}{Cut\+Ellipsoid}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCutEllipsoid_aa5ccec788a786615a120c0097cc07890}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const override
+\begin{DoxyCompactList}\small\item\em Remove o elipsoide especificado do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para remover um elipsoide de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classCutEllipsoid}{Cut\+Ellipsoid}} é derivada de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e implementa a operação de remoção de um elipsoide. O elipsoide é definido pelo seu centro {\ttfamily (xcenter, ycenter, zcenter)} e pelos raios {\ttfamily rx}, {\ttfamily ry}, e {\ttfamily rz} em cada um dos eixos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCutEllipsoid_a341bcf037ada67c4727857b467d7788b}\label{classCutEllipsoid_a341bcf037ada67c4727857b467d7788b}} 
+\index{CutEllipsoid@{CutEllipsoid}!CutEllipsoid@{CutEllipsoid}}
+\index{CutEllipsoid@{CutEllipsoid}!CutEllipsoid@{CutEllipsoid}}
+\doxysubsubsection{\texorpdfstring{CutEllipsoid()}{CutEllipsoid()}}
+{\footnotesize\ttfamily Cut\+Ellipsoid\+::\+Cut\+Ellipsoid (\begin{DoxyParamCaption}\item[{int}]{xcenter,  }\item[{int}]{ycenter,  }\item[{int}]{zcenter,  }\item[{int}]{rx,  }\item[{int}]{ry,  }\item[{int}]{rz }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classCutEllipsoid}{Cut\+Ellipsoid}}. 
+
+Inicializa os atributos que definem o elipsoide a ser removido.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & Coordenada X do centro do elipsoide. \\
+\hline
+{\em ycenter} & Coordenada Y do centro do elipsoide. \\
+\hline
+{\em zcenter} & Coordenada Z do centro do elipsoide. \\
+\hline
+{\em rx} & Raio do elipsoide no eixo X. \\
+\hline
+{\em ry} & Raio do elipsoide no eixo Y. \\
+\hline
+{\em rz} & Raio do elipsoide no eixo Z. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCutEllipsoid_aa5ccec788a786615a120c0097cc07890}\label{classCutEllipsoid_aa5ccec788a786615a120c0097cc07890}} 
+\index{CutEllipsoid@{CutEllipsoid}!draw@{draw}}
+\index{draw@{draw}!CutEllipsoid@{CutEllipsoid}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Cut\+Ellipsoid\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove o elipsoide especificado do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+O método desativa todos os voxels que pertencem ao elipsoide definido pelo centro {\ttfamily (xcenter, ycenter, zcenter)} e pelos raios {\ttfamily rx}, {\ttfamily ry}, {\ttfamily rz}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{cut-ellipsoid_8h}{cut-\/ellipsoid.\+h}}\item 
+src/classes/\mbox{\hyperlink{cut-ellipsoid_8cpp}{cut-\/ellipsoid.\+cpp}}\end{DoxyCompactItemize}

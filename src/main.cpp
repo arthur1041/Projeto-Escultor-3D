@@ -8,14 +8,14 @@ int main()
   {
     FiguraReader reader;
     
-    Sculptor *sculptor = reader.readFile("commands.txt");
+    Sculptor *sculptor = reader.readFile("frieza_spaceship.txt");
 
     for (const auto &figura : reader.getFiguras())
     {
       figura->draw(*sculptor);
     }
 
-    const char* outputFilename = "frieza_spaceship_2.off";
+    const char* outputFilename = "frieza_spaceship.off";
     
     sculptor->writeOFF(outputFilename);
 

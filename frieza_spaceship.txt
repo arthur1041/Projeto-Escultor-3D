@@ -1,0 +1,52 @@
+dim 120 120 60
+
+# Parte 1: Suportes (pés da nave)
+putellipsoid 103 85 15 3 3 15 1.0 1.0 1.0 1.0
+cutbox 100 106 82 88 35 15
+putellipsoid 60 110 15 3 3 15 1.0 1.0 1.0 1.0
+cutbox 57 63 107 113 35 15
+putellipsoid 16 85 15 3 3 15 1.0 1.0 1.0 1.0
+cutbox 13 19 82 88 35 15
+putellipsoid 16 35 15 3 3 15 1.0 1.0 1.0 1.0
+cutbox 13 19 32 38 35 15
+putellipsoid 60 10 15 3 3 15 1.0 1.0 1.0 1.0
+cutbox 57 63 7 13 35 15
+putellipsoid 103 35 15 3 3 15 1.0 1.0 1.0 1.0
+cutbox 100 106 32 38 35 15
+
+# Parte 2: Base inferior (elipsoide preto)
+putellipsoid 60 60 15 50 50 10 0.0 0.0 0.0 1.0
+
+# Parte 3: Detalhes amarelos na borda inferior
+putellipsoid 108 60 15 4 4 5 0.9 0.8 0.1 1.0
+putellipsoid 84 101 15 4 4 5 0.9 0.8 0.1 1.0
+putellipsoid 36 101 15 4 4 5 0.9 0.8 0.1 1.0
+putellipsoid 12 60 15 4 4 5 0.9 0.8 0.1 1.0
+putellipsoid 36 18 15 4 4 5 0.9 0.8 0.1 1.0
+putellipsoid 84 18 15 4 4 5 0.9 0.8 0.1 1.0
+
+# Parte 4: Cúpula superior (elipsoide branco)
+putellipsoid 60 60 15 45 45 15 1.0 1.0 1.0 1.0
+
+# Detalhes da cúpula
+cutvoxel 60 60 0
+cutvoxel 60 60 30
+putsphere 60 60 30 13 0.5 0.5 0.5 1.0
+cutbox 44 76 44 76 30 59
+
+# Parte 5: Detalhes verdes
+putvoxel 109 73 15 0.0 0.8 0.5 1.0
+putvoxel 96 96 15 0.0 0.8 0.5 1.0
+putvoxel 73 109 15 0.0 0.8 0.5 1.0
+putvoxel 47 109 15 0.0 0.8 0.5 1.0
+putvoxel 24 96 15 0.0 0.8 0.5 1.0
+putvoxel 11 73 15 0.0 0.8 0.5 1.0
+putvoxel 11 47 15 0.0 0.8 0.5 1.0
+putvoxel 24 24 15 0.0 0.8 0.5 1.0
+putvoxel 47 11 15 0.0 0.8 0.5 1.0
+putvoxel 73 11 15 0.0 0.8 0.5 1.0
+putvoxel 96 24 15 0.0 0.8 0.5 1.0
+putvoxel 109 47 15 0.0 0.8 0.5 1.0
+
+# Parte 6: Detalhes roxos no topo
+putsphere 60 92 20 8 0.5 0.0 0.5 1.0

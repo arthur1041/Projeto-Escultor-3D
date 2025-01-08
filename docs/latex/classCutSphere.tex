@@ -1,0 +1,87 @@
+\hypertarget{classCutSphere}{}\doxysection{Cut\+Sphere Class Reference}
+\label{classCutSphere}\index{CutSphere@{CutSphere}}
+
+
+Classe para remover uma esfera de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$cut-\/sphere.\+h$>$}
+
+
+
+Inheritance diagram for Cut\+Sphere\+:
+% FIG 0
+
+
+Collaboration diagram for Cut\+Sphere\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCutSphere_a12b9ccb665a11db650b47fedab71fddf}{Cut\+Sphere}} (int xcenter, int ycenter, int zcenter, int radius)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCutSphere_a165580eae0ffec22277618891f032152}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const override
+\begin{DoxyCompactList}\small\item\em Remove a esfera especificada do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para remover uma esfera de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}} é derivada de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e implementa a operação de remoção de uma esfera. A esfera é definida pelo seu centro {\ttfamily (xcenter, ycenter, zcenter)} e pelo raio {\ttfamily radius}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCutSphere_a12b9ccb665a11db650b47fedab71fddf}\label{classCutSphere_a12b9ccb665a11db650b47fedab71fddf}} 
+\index{CutSphere@{CutSphere}!CutSphere@{CutSphere}}
+\index{CutSphere@{CutSphere}!CutSphere@{CutSphere}}
+\doxysubsubsection{\texorpdfstring{CutSphere()}{CutSphere()}}
+{\footnotesize\ttfamily Cut\+Sphere\+::\+Cut\+Sphere (\begin{DoxyParamCaption}\item[{int}]{xcenter,  }\item[{int}]{ycenter,  }\item[{int}]{zcenter,  }\item[{int}]{radius }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}}. 
+
+Inicializa os atributos que definem a esfera a ser removida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & Coordenada X do centro da esfera. \\
+\hline
+{\em ycenter} & Coordenada Y do centro da esfera. \\
+\hline
+{\em zcenter} & Coordenada Z do centro da esfera. \\
+\hline
+{\em radius} & Raio da esfera. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCutSphere_a165580eae0ffec22277618891f032152}\label{classCutSphere_a165580eae0ffec22277618891f032152}} 
+\index{CutSphere@{CutSphere}!draw@{draw}}
+\index{draw@{draw}!CutSphere@{CutSphere}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Cut\+Sphere\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove a esfera especificada do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+O método desativa todos os voxels que pertencem à esfera definida pelo centro {\ttfamily (xcenter, ycenter, zcenter)} e pelo raio {\ttfamily radius}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{cut-sphere_8h}{cut-\/sphere.\+h}}\item 
+src/classes/\mbox{\hyperlink{cut-sphere_8cpp}{cut-\/sphere.\+cpp}}\end{DoxyCompactItemize}

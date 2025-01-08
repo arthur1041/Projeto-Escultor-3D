@@ -1,0 +1,93 @@
+\hypertarget{classPutVoxel}{}\doxysection{Put\+Voxel Class Reference}
+\label{classPutVoxel}\index{PutVoxel@{PutVoxel}}
+
+
+Classe para adicionar um único voxel a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$put-\/voxel.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Voxel\+:
+% FIG 0
+
+
+Collaboration diagram for Put\+Voxel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPutVoxel_aba9a1d522ca6fbbd8c3ec2271c9e5c18}{Put\+Voxel}} (int x, int y, int z, float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPutVoxel_af41f32b745dfe93f4aa95e5256d304db}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const override
+\begin{DoxyCompactList}\small\item\em Adiciona o voxel especificado ao objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para adicionar um único voxel a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}} é derivada de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e implementa a operação de adição de um único voxel. O voxel é definido por suas coordenadas {\ttfamily (x, y, z)} e sua cor é especificada pelos valores RGBA. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPutVoxel_aba9a1d522ca6fbbd8c3ec2271c9e5c18}\label{classPutVoxel_aba9a1d522ca6fbbd8c3ec2271c9e5c18}} 
+\index{PutVoxel@{PutVoxel}!PutVoxel@{PutVoxel}}
+\index{PutVoxel@{PutVoxel}!PutVoxel@{PutVoxel}}
+\doxysubsubsection{\texorpdfstring{PutVoxel()}{PutVoxel()}}
+{\footnotesize\ttfamily Put\+Voxel\+::\+Put\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}}. 
+
+Inicializa as coordenadas e a cor do voxel que será adicionado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordenada X do voxel. \\
+\hline
+{\em y} & Coordenada Y do voxel. \\
+\hline
+{\em z} & Coordenada Z do voxel. \\
+\hline
+{\em r} & Componente vermelha da cor (0-\/1). \\
+\hline
+{\em g} & Componente verde da cor (0-\/1). \\
+\hline
+{\em b} & Componente azul da cor (0-\/1). \\
+\hline
+{\em a} & Transparência da cor (0-\/1). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPutVoxel_af41f32b745dfe93f4aa95e5256d304db}\label{classPutVoxel_af41f32b745dfe93f4aa95e5256d304db}} 
+\index{PutVoxel@{PutVoxel}!draw@{draw}}
+\index{draw@{draw}!PutVoxel@{PutVoxel}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Voxel\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adiciona o voxel especificado ao objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+O método ativa o voxel localizado nas coordenadas {\ttfamily (x, y, z)} no objeto \mbox{\hyperlink{classSculptor}{Sculptor}} e aplica a cor definida pelos valores RGBA.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{put-voxel_8h}{put-\/voxel.\+h}}\item 
+src/classes/\mbox{\hyperlink{put-voxel_8cpp}{put-\/voxel.\+cpp}}\end{DoxyCompactItemize}

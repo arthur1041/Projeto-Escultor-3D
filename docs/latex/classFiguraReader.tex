@@ -1,0 +1,87 @@
+\hypertarget{classFiguraReader}{}\doxysection{Figura\+Reader Class Reference}
+\label{classFiguraReader}\index{FiguraReader@{FiguraReader}}
+
+
+Classe responsável por ler figuras geométricas de um arquivo de texto.  
+
+
+
+
+{\ttfamily \#include $<$figura-\/reader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFiguraReader_ae073438f1735c166351f9a3fe0efea22}{Figura\+Reader}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{classFiguraReader}{Figura\+Reader}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSculptor}{Sculptor}} $\ast$ \mbox{\hyperlink{classFiguraReader_a4e12c64cec87c9bb471be48c6f8536ba}{read\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Lê um arquivo de texto contendo comandos para criação de figuras geométricas. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} $>$ $>$ \& \mbox{\hyperlink{classFiguraReader_adf03bcc522a921c6c9498465ebfe4f3d}{get\+Figuras}} () const
+\begin{DoxyCompactList}\small\item\em Retorna uma referência ao container de figuras geométricas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável por ler figuras geométricas de um arquivo de texto. 
+
+A classe \mbox{\hyperlink{classFiguraReader}{Figura\+Reader}} interpreta comandos de um arquivo de texto e cria objetos das classes derivadas de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}}. Esses objetos são armazenados em um container interno e podem ser utilizados para manipular um objeto da classe \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFiguraReader_ae073438f1735c166351f9a3fe0efea22}\label{classFiguraReader_ae073438f1735c166351f9a3fe0efea22}} 
+\index{FiguraReader@{FiguraReader}!FiguraReader@{FiguraReader}}
+\index{FiguraReader@{FiguraReader}!FiguraReader@{FiguraReader}}
+\doxysubsubsection{\texorpdfstring{FiguraReader()}{FiguraReader()}}
+{\footnotesize\ttfamily Figura\+Reader\+::\+Figura\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão da classe \mbox{\hyperlink{classFiguraReader}{Figura\+Reader}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFiguraReader_adf03bcc522a921c6c9498465ebfe4f3d}\label{classFiguraReader_adf03bcc522a921c6c9498465ebfe4f3d}} 
+\index{FiguraReader@{FiguraReader}!getFiguras@{getFiguras}}
+\index{getFiguras@{getFiguras}!FiguraReader@{FiguraReader}}
+\doxysubsubsection{\texorpdfstring{getFiguras()}{getFiguras()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} $>$ $>$ \& Figura\+Reader\+::get\+Figuras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna uma referência ao container de figuras geométricas. 
+
+Este método permite acessar os objetos \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} criados após a leitura do arquivo. Os objetos são armazenados em um {\ttfamily std\+::vector} de {\ttfamily std\+::unique\+\_\+ptr}.
+
+\begin{DoxyReturn}{Returns}
+Referência constante ao container de figuras geométricas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFiguraReader_a4e12c64cec87c9bb471be48c6f8536ba}\label{classFiguraReader_a4e12c64cec87c9bb471be48c6f8536ba}} 
+\index{FiguraReader@{FiguraReader}!readFile@{readFile}}
+\index{readFile@{readFile}!FiguraReader@{FiguraReader}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSculptor}{Sculptor}} $\ast$ Figura\+Reader\+::read\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Lê um arquivo de texto contendo comandos para criação de figuras geométricas. 
+
+Este método interpreta os comandos presentes no arquivo especificado e cria os objetos correspondentes. Além disso, inicializa e retorna um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} com as dimensões especificadas no comando {\ttfamily dim}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do arquivo de entrada contendo os comandos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} inicializado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & Se o arquivo não puder ser aberto. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{figura-reader_8h}{figura-\/reader.\+h}}\item 
+src/classes/\mbox{\hyperlink{figura-reader_8cpp}{figura-\/reader.\+cpp}}\end{DoxyCompactItemize}

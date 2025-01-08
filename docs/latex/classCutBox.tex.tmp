@@ -1,0 +1,91 @@
+\hypertarget{classCutBox}{}\doxysection{Cut\+Box Class Reference}
+\label{classCutBox}\index{CutBox@{CutBox}}
+
+
+Classe para remover um paralelepípedo de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$cut-\/box.\+h$>$}
+
+
+
+Inheritance diagram for Cut\+Box\+:
+% FIG 0
+
+
+Collaboration diagram for Cut\+Box\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCutBox_a0e7e856f22e31926719bef5a69685051}{Cut\+Box}} (int x0, int x1, int y0, int y1, int z0, int z1)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classCutBox}{Cut\+Box}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCutBox_a85237405205a95158959d7cc6f89c783}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const override
+\begin{DoxyCompactList}\small\item\em Remove a região especificada do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para remover um paralelepípedo de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classCutBox}{Cut\+Box}} é derivada de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e implementa a operação de remoção de um paralelepípedo definido pelas coordenadas {\ttfamily (x0, x1)}, {\ttfamily (y0, y1)} e {\ttfamily (z0, z1)}. A região especificada terá todos os voxels desativados no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCutBox_a0e7e856f22e31926719bef5a69685051}\label{classCutBox_a0e7e856f22e31926719bef5a69685051}} 
+\index{CutBox@{CutBox}!CutBox@{CutBox}}
+\index{CutBox@{CutBox}!CutBox@{CutBox}}
+\doxysubsubsection{\texorpdfstring{CutBox()}{CutBox()}}
+{\footnotesize\ttfamily Cut\+Box\+::\+Cut\+Box (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{x1,  }\item[{int}]{y0,  }\item[{int}]{y1,  }\item[{int}]{z0,  }\item[{int}]{z1 }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classCutBox}{Cut\+Box}}. 
+
+Inicializa os limites da região a ser removida no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & Coordenada inicial no eixo X. \\
+\hline
+{\em x1} & Coordenada final no eixo X. \\
+\hline
+{\em y0} & Coordenada inicial no eixo Y. \\
+\hline
+{\em y1} & Coordenada final no eixo Y. \\
+\hline
+{\em z0} & Coordenada inicial no eixo Z. \\
+\hline
+{\em z1} & Coordenada final no eixo Z. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCutBox_a85237405205a95158959d7cc6f89c783}\label{classCutBox_a85237405205a95158959d7cc6f89c783}} 
+\index{CutBox@{CutBox}!draw@{draw}}
+\index{draw@{draw}!CutBox@{CutBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Cut\+Box\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove a região especificada do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+O método desativa todos os voxels dentro da região delimitada por {\ttfamily (x0, x1)}, {\ttfamily (y0, y1)} e {\ttfamily (z0, z1)} no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{cut-box_8h}{cut-\/box.\+h}}\item 
+src/classes/\mbox{\hyperlink{cut-box_8cpp}{cut-\/box.\+cpp}}\end{DoxyCompactItemize}

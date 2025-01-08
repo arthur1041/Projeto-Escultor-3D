@@ -1,0 +1,95 @@
+\hypertarget{classPutSphere}{}\doxysection{Put\+Sphere Class Reference}
+\label{classPutSphere}\index{PutSphere@{PutSphere}}
+
+
+Classe para adicionar uma esfera a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$put-\/sphere.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Sphere\+:
+% FIG 0
+
+
+Collaboration diagram for Put\+Sphere\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPutSphere_aad7d38e4406ef3cd77c6fd60c0b64e43}{Put\+Sphere}} (int xcenter, int ycenter, int zcenter, int radius, float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPutSphere_a5cd609ff7b8fa175a81e53125b4801fe}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const override
+\begin{DoxyCompactList}\small\item\em Adiciona a esfera especificada ao objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para adicionar uma esfera a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}} é derivada de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e implementa a operação de adição de uma esfera. A esfera é definida pelo seu centro {\ttfamily (xcenter, ycenter, zcenter)} e pelo raio {\ttfamily radius}. Sua cor é especificada pelos valores RGBA. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPutSphere_aad7d38e4406ef3cd77c6fd60c0b64e43}\label{classPutSphere_aad7d38e4406ef3cd77c6fd60c0b64e43}} 
+\index{PutSphere@{PutSphere}!PutSphere@{PutSphere}}
+\index{PutSphere@{PutSphere}!PutSphere@{PutSphere}}
+\doxysubsubsection{\texorpdfstring{PutSphere()}{PutSphere()}}
+{\footnotesize\ttfamily Put\+Sphere\+::\+Put\+Sphere (\begin{DoxyParamCaption}\item[{int}]{xcenter,  }\item[{int}]{ycenter,  }\item[{int}]{zcenter,  }\item[{int}]{radius,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}}. 
+
+Inicializa os atributos que definem a esfera, incluindo seu centro, raio e os valores de cor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & Coordenada X do centro da esfera. \\
+\hline
+{\em ycenter} & Coordenada Y do centro da esfera. \\
+\hline
+{\em zcenter} & Coordenada Z do centro da esfera. \\
+\hline
+{\em radius} & Raio da esfera. \\
+\hline
+{\em r} & Componente vermelha da cor (0-\/1). \\
+\hline
+{\em g} & Componente verde da cor (0-\/1). \\
+\hline
+{\em b} & Componente azul da cor (0-\/1). \\
+\hline
+{\em a} & Transparência da cor (0-\/1). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPutSphere_a5cd609ff7b8fa175a81e53125b4801fe}\label{classPutSphere_a5cd609ff7b8fa175a81e53125b4801fe}} 
+\index{PutSphere@{PutSphere}!draw@{draw}}
+\index{draw@{draw}!PutSphere@{PutSphere}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Sphere\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adiciona a esfera especificada ao objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+O método ativa todos os voxels que pertencem à esfera definida pelo centro {\ttfamily (xcenter, ycenter, zcenter)} e pelo raio {\ttfamily radius}, aplicando a cor definida pelos valores RGBA.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{put-sphere_8h}{put-\/sphere.\+h}}\item 
+src/classes/\mbox{\hyperlink{put-sphere_8cpp}{put-\/sphere.\+cpp}}\end{DoxyCompactItemize}

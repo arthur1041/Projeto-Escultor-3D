@@ -1,0 +1,99 @@
+\hypertarget{classPutBox}{}\doxysection{Put\+Box Class Reference}
+\label{classPutBox}\index{PutBox@{PutBox}}
+
+
+Classe para adicionar um paralelepípedo a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$put-\/box.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Box\+:
+% FIG 0
+
+
+Collaboration diagram for Put\+Box\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPutBox_a0cb7487b6058969a8a015842cf3257de}{Put\+Box}} (int x0, int x1, int y0, int y1, int z0, int z1, float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classPutBox}{Put\+Box}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPutBox_af31bbc3174a045f0b990b06a0febe697}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const override
+\begin{DoxyCompactList}\small\item\em Adiciona o paralelepípedo especificado ao objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para adicionar um paralelepípedo a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classPutBox}{Put\+Box}} é derivada de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e implementa a operação de adição de um paralelepípedo. O paralelepípedo é definido por seus limites nas dimensões X, Y e Z, além de possuir uma cor especificada por RGBA. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPutBox_a0cb7487b6058969a8a015842cf3257de}\label{classPutBox_a0cb7487b6058969a8a015842cf3257de}} 
+\index{PutBox@{PutBox}!PutBox@{PutBox}}
+\index{PutBox@{PutBox}!PutBox@{PutBox}}
+\doxysubsubsection{\texorpdfstring{PutBox()}{PutBox()}}
+{\footnotesize\ttfamily Put\+Box\+::\+Put\+Box (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{x1,  }\item[{int}]{y0,  }\item[{int}]{y1,  }\item[{int}]{z0,  }\item[{int}]{z1,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classPutBox}{Put\+Box}}. 
+
+Inicializa os limites do paralelepípedo e define sua cor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & Coordenada inicial no eixo X. \\
+\hline
+{\em x1} & Coordenada final no eixo X. \\
+\hline
+{\em y0} & Coordenada inicial no eixo Y. \\
+\hline
+{\em y1} & Coordenada final no eixo Y. \\
+\hline
+{\em z0} & Coordenada inicial no eixo Z. \\
+\hline
+{\em z1} & Coordenada final no eixo Z. \\
+\hline
+{\em r} & Componente vermelha da cor (0-\/1). \\
+\hline
+{\em g} & Componente verde da cor (0-\/1). \\
+\hline
+{\em b} & Componente azul da cor (0-\/1). \\
+\hline
+{\em a} & Transparência da cor (0-\/1). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPutBox_af31bbc3174a045f0b990b06a0febe697}\label{classPutBox_af31bbc3174a045f0b990b06a0febe697}} 
+\index{PutBox@{PutBox}!draw@{draw}}
+\index{draw@{draw}!PutBox@{PutBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Box\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adiciona o paralelepípedo especificado ao objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+O método ativa todos os voxels dentro da região delimitada por {\ttfamily (x0, x1)}, {\ttfamily (y0, y1)} e {\ttfamily (z0, z1)}, aplicando a cor definida pelos valores RGBA.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{put-box_8h}{put-\/box.\+h}}\item 
+src/classes/\mbox{\hyperlink{put-box_8cpp}{put-\/box.\+cpp}}\end{DoxyCompactItemize}

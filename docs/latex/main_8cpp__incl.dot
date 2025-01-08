@@ -1,0 +1,54 @@
+digraph "src/main.cpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="figura-reader.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figura-reader_8h.html",tooltip="Declaração da classe FiguraReader para leitura de figuras geométricas de um arquivo."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="memory",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="fstream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="sstream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="figura-geometrica.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figura-geometrica_8h.html",tooltip="Declaração da classe abstrata FiguraGeometrica."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="sculptor.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sculptor_8h.html",tooltip="Declaração da classe Sculptor."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="voxel.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$voxel_8h.html",tooltip="Declaração da estrutura Voxel."];
+  Node3 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="put-voxel.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-voxel_8h.html",tooltip="Declaração da classe PutVoxel."];
+  Node12 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="cut-voxel.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-voxel_8h.html",tooltip="Declaração da classe CutVoxel."];
+  Node13 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="put-box.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-box_8h.html",tooltip="Declaração da classe PutBox."];
+  Node14 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="cut-box.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-box_8h.html",tooltip="Declaração da classe CutBox."];
+  Node15 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="put-sphere.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-sphere_8h.html",tooltip="Declaração da classe PutSphere."];
+  Node16 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="cut-sphere.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-sphere_8h.html",tooltip="Declaração da classe CutSphere."];
+  Node17 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="put-ellipsoid.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$put-ellipsoid_8h.html",tooltip="Declaração da classe PutEllipsoid."];
+  Node18 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="cut-ellipsoid.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cut-ellipsoid_8h.html",tooltip="Declaração da classe CutEllipsoid."];
+  Node19 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+}

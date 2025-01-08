@@ -1,0 +1,85 @@
+\hypertarget{classCutVoxel}{}\doxysection{Cut\+Voxel Class Reference}
+\label{classCutVoxel}\index{CutVoxel@{CutVoxel}}
+
+
+Classe para remover um único voxel de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$cut-\/voxel.\+h$>$}
+
+
+
+Inheritance diagram for Cut\+Voxel\+:
+% FIG 0
+
+
+Collaboration diagram for Cut\+Voxel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCutVoxel_a32d12f653ebb96da8c3aa62994692bad}{Cut\+Voxel}} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classCutVoxel}{Cut\+Voxel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCutVoxel_a03f27f215d6a5d3a5af58c8e71cdeb23}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t) const override
+\begin{DoxyCompactList}\small\item\em Remove o voxel especificado do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para remover um único voxel de um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classCutVoxel}{Cut\+Voxel}} é derivada de \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e implementa a operação de remoção de um voxel específico identificado por suas coordenadas {\ttfamily (x, y, z)}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCutVoxel_a32d12f653ebb96da8c3aa62994692bad}\label{classCutVoxel_a32d12f653ebb96da8c3aa62994692bad}} 
+\index{CutVoxel@{CutVoxel}!CutVoxel@{CutVoxel}}
+\index{CutVoxel@{CutVoxel}!CutVoxel@{CutVoxel}}
+\doxysubsubsection{\texorpdfstring{CutVoxel()}{CutVoxel()}}
+{\footnotesize\ttfamily Cut\+Voxel\+::\+Cut\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classCutVoxel}{Cut\+Voxel}}. 
+
+Inicializa as coordenadas do voxel que será removido.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordenada X do voxel. \\
+\hline
+{\em y} & Coordenada Y do voxel. \\
+\hline
+{\em z} & Coordenada Z do voxel. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCutVoxel_a03f27f215d6a5d3a5af58c8e71cdeb23}\label{classCutVoxel_a03f27f215d6a5d3a5af58c8e71cdeb23}} 
+\index{CutVoxel@{CutVoxel}!draw@{draw}}
+\index{draw@{draw}!CutVoxel@{CutVoxel}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Cut\+Voxel\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove o voxel especificado do objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+O método desativa o voxel localizado nas coordenadas {\ttfamily (x, y, z)} no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para o objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a0740abd2aa2619251c408192e37b540e}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{cut-voxel_8h}{cut-\/voxel.\+h}}\item 
+src/classes/\mbox{\hyperlink{cut-voxel_8cpp}{cut-\/voxel.\+cpp}}\end{DoxyCompactItemize}

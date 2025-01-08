@@ -1,0 +1,172 @@
+\hypertarget{classSculptor}{}\doxysection{Sculptor Class Reference}
+\label{classSculptor}\index{Sculptor@{Sculptor}}
+
+
+Classe para manipular uma matriz tridimensional de voxels.  
+
+
+
+
+{\ttfamily \#include $<$sculptor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSculptor_a014e3ef5517bf0e9d9e14486b6ac6433}{Sculptor}} (int \+\_\+nx, int \+\_\+ny, int \+\_\+nz)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSculptor_a8f159bf97458326f16d2e238e11be7ff}{$\sim$\+Sculptor}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVoxel}{Voxel}} $\ast$$\ast$$\ast$ \mbox{\hyperlink{classSculptor_aabfb4c1c3387ab6ef8465bc13f374146}{get\+Voxel\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Retorna a matriz tridimensional de voxels. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSculptor_a9fa9452699877020a9fe9ac25452fb02}{get\+Nx}} ()
+\begin{DoxyCompactList}\small\item\em Retorna a dimensão no eixo X. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSculptor_a2b54a4cc5db32d0d774a029ca33da3d4}{get\+Ny}} ()
+\begin{DoxyCompactList}\small\item\em Retorna a dimensão no eixo Y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSculptor_a8c46199d2ab46e8567edf508c91def1f}{get\+Nz}} ()
+\begin{DoxyCompactList}\small\item\em Retorna a dimensão no eixo Z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSculptor_a4351c930a07887e96d4fdbf251a7867e}{set\+Color}} (float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em Define a cor atual para desenho. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSculptor_a58cb72d22001a5034f15383ca983830c}{write\+OFF}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Exporta a escultura para um arquivo no formato OFF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para manipular uma matriz tridimensional de voxels. 
+
+A classe \mbox{\hyperlink{classSculptor}{Sculptor}} permite criar e modificar esculturas digitais tridimensionais usando uma matriz de voxels. Além disso, oferece suporte para exportar a matriz no formato OFF para visualização externa. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSculptor_a014e3ef5517bf0e9d9e14486b6ac6433}\label{classSculptor_a014e3ef5517bf0e9d9e14486b6ac6433}} 
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{Sculptor()}{Sculptor()}}
+{\footnotesize\ttfamily Sculptor\+::\+Sculptor (\begin{DoxyParamCaption}\item[{int}]{\+\_\+nx,  }\item[{int}]{\+\_\+ny,  }\item[{int}]{\+\_\+nz }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+Inicializa uma matriz tridimensional com as dimensões especificadas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nx} & Dimensão no eixo X. \\
+\hline
+{\em \+\_\+ny} & Dimensão no eixo Y. \\
+\hline
+{\em \+\_\+nz} & Dimensão no eixo Z. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSculptor_a8f159bf97458326f16d2e238e11be7ff}\label{classSculptor_a8f159bf97458326f16d2e238e11be7ff}} 
+\index{Sculptor@{Sculptor}!````~Sculptor@{$\sim$Sculptor}}
+\index{````~Sculptor@{$\sim$Sculptor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sculptor()}{~Sculptor()}}
+{\footnotesize\ttfamily Sculptor\+::$\sim$\+Sculptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destrutor da classe \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+Libera a memória alocada pela matriz tridimensional de voxels. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSculptor_a9fa9452699877020a9fe9ac25452fb02}\label{classSculptor_a9fa9452699877020a9fe9ac25452fb02}} 
+\index{Sculptor@{Sculptor}!getNx@{getNx}}
+\index{getNx@{getNx}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{getNx()}{getNx()}}
+{\footnotesize\ttfamily int Sculptor\+::get\+Nx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna a dimensão no eixo X. 
+
+\begin{DoxyReturn}{Returns}
+A dimensão {\ttfamily nx} da matriz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSculptor_a2b54a4cc5db32d0d774a029ca33da3d4}\label{classSculptor_a2b54a4cc5db32d0d774a029ca33da3d4}} 
+\index{Sculptor@{Sculptor}!getNy@{getNy}}
+\index{getNy@{getNy}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{getNy()}{getNy()}}
+{\footnotesize\ttfamily int Sculptor\+::get\+Ny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna a dimensão no eixo Y. 
+
+\begin{DoxyReturn}{Returns}
+A dimensão {\ttfamily ny} da matriz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSculptor_a8c46199d2ab46e8567edf508c91def1f}\label{classSculptor_a8c46199d2ab46e8567edf508c91def1f}} 
+\index{Sculptor@{Sculptor}!getNz@{getNz}}
+\index{getNz@{getNz}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{getNz()}{getNz()}}
+{\footnotesize\ttfamily int Sculptor\+::get\+Nz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna a dimensão no eixo Z. 
+
+\begin{DoxyReturn}{Returns}
+A dimensão {\ttfamily nz} da matriz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSculptor_aabfb4c1c3387ab6ef8465bc13f374146}\label{classSculptor_aabfb4c1c3387ab6ef8465bc13f374146}} 
+\index{Sculptor@{Sculptor}!getVoxelMatrix@{getVoxelMatrix}}
+\index{getVoxelMatrix@{getVoxelMatrix}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{getVoxelMatrix()}{getVoxelMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVoxel}{Voxel}} $\ast$$\ast$$\ast$ Sculptor\+::get\+Voxel\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna a matriz tridimensional de voxels. 
+
+Este método fornece acesso direto à matriz tridimensional gerenciada pela classe.
+
+\begin{DoxyReturn}{Returns}
+Um ponteiro para a matriz tridimensional de voxels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSculptor_a4351c930a07887e96d4fdbf251a7867e}\label{classSculptor_a4351c930a07887e96d4fdbf251a7867e}} 
+\index{Sculptor@{Sculptor}!setColor@{setColor}}
+\index{setColor@{setColor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Sculptor\+::set\+Color (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Define a cor atual para desenho. 
+
+A cor é especificada em termos de valores RGBA.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Componente vermelha (0-\/1). \\
+\hline
+{\em g} & Componente verde (0-\/1). \\
+\hline
+{\em b} & Componente azul (0-\/1). \\
+\hline
+{\em a} & Transparência (0-\/1). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSculptor_a58cb72d22001a5034f15383ca983830c}\label{classSculptor_a58cb72d22001a5034f15383ca983830c}} 
+\index{Sculptor@{Sculptor}!writeOFF@{writeOFF}}
+\index{writeOFF@{writeOFF}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{writeOFF()}{writeOFF()}}
+{\footnotesize\ttfamily void Sculptor\+::write\+OFF (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Exporta a escultura para um arquivo no formato OFF. 
+
+O formato OFF permite que a escultura seja visualizada em ferramentas externas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do arquivo de saída. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/headers/\mbox{\hyperlink{sculptor_8h}{sculptor.\+h}}\item 
+src/classes/\mbox{\hyperlink{sculptor_8cpp}{sculptor.\+cpp}}\end{DoxyCompactItemize}
