@@ -1,22 +1,33 @@
-#include "sculptor.h"
-#include "put-voxel.h"
-#include "cut-voxel.h"
 #include <iostream>
+#include "figura-reader.h"
+#include "sculptor.h"
 
-int main() {
-    Sculptor sculptor(10, 10, 10);
-
-    PutVoxel voxel(5, 5, 5, 1.0f, 0.0f, 0.0f, 0.5f);
-    voxel.draw(sculptor);
-
-    // CutVoxel cutVoxel(5, 5, 5);
-
-    // cutVoxel.draw(sculptor);
+int main()
+{
+  try
+  {
+    FiguraReader reader;
     
-    sculptor.writeOFF("cutvoxel.off");
-    std::cout << "Voxel desenhado e salvo como putvoxel.off" << std::endl;
+    Sculptor *sculptor = reader.readFile("commands.txt");
 
+    for (const auto &figura : reader.getFiguras())
+    {
+      figura->draw(*sculptor);
+    }
 
+    const char* outputFilename = "frieza_spaceship_2.off";
+    
+    sculptor->writeOFF(outputFilename);
 
-    return 0;
+    delete sculptor;
+
+    std::cout << "Escultura salva em " << outputFilename << std::endl;
+  }
+  catch (const std::exception &e)
+  {
+    std::cerr << "Erro: " << e.what() << std::endl;
+    return 1;
+  }
+
+  return 0;
 }

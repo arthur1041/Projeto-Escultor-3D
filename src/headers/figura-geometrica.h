@@ -1,3 +1,5 @@
+// figura-geometrica.h
+
 #ifndef FIGURA_GEOMETRICA_H
 #define FIGURA_GEOMETRICA_H
 

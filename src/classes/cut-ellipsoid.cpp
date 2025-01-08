@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "cut-ellipsoid.h"
 
 CutEllipsoid::CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
